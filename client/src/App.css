@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Caramel-candy";
+  src: url(./assets/fonts/Quick-Beige.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --title-font: "Caramel-candy";
+}
+
+h2 {
+  font-family: var(--title-font);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #feee02;
+  .carambar-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    z-index: 1;
+  }
+}
+.carambar-img {
+  width: 100%;
+  object-fit: cover;
+}
