@@ -1,7 +1,6 @@
 .joke-button {
   position: fixed;
   width: 30%;
-  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,10 +27,17 @@
     transform: scale(1.2) translateX(2px) rotate(8deg);
   }
 }
-.all-jokes {
-  right: 3%;
-  bottom: 0;
+.all-jokes,
+.add-joke {
   &:hover {
     transform: scale(1.2) translateX(2px) rotate(-8deg);
   }
+}
+.all-jokes {
+  right: 3%;
+  bottom: 0;
+}
+.add-joke {
+  right: 12%;
+  top: -10%;
 }

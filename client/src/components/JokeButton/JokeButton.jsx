@@ -1,19 +1,20 @@
 import PropTypes from "prop-types";
-import "./RandomJoke.css";
+import "./JokeButton.css";
 import boom from "../../assets/images/boom.png";
 
-function RandomJoke({ css, text }) {
+function JokeButton({ css, text, openModal }) {
   return (
-    <button type="button" className={`joke-button ${css}`}>
+    <button type="button" className={`joke-button ${css}`} onClick={openModal}>
       <img src={boom} alt="" />
       <h2>{text}</h2>
     </button>
   );
 }
 
-RandomJoke.propTypes = {
+JokeButton.propTypes = {
   css: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  openModal: PropTypes.func.isRequired,
 };
 
-export default RandomJoke;
+export default JokeButton;
