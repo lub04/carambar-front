@@ -1,6 +1,6 @@
 {
   "name": "@harmonia/client",
-  "homepage": "https://lub04.github.io/carambar",
+  "homepage": "https://lub04.github.io/carambar-front/",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
