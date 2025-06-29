@@ -88,10 +88,13 @@ main {
       align-items: center;
       justify-content: center;
       gap: 0.3rem;
+      white-space: normal;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      text-align: center;
       p {
         color: black;
         font-size: 1rem;
-        height: 2rem;
       }
     }
   }

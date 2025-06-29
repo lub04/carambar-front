@@ -47,8 +47,9 @@ function App() {
   };
 
   const closeModal = () => {
-    setModalIsOpen(false);
     setAnswer(false);
+    setAnswerId(null);
+    setModalIsOpen(false);
   };
 
   const handleCreateJoke = (event) => {
@@ -90,6 +91,7 @@ function App() {
         openModal={() => openModal("add")}
       />
       <Modal
+        key={modalType}
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Validation Modal"
