@@ -18,7 +18,7 @@
     text-align: center;
     padding: 1rem;
     width: 80%;
-    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
   }
 }
 .random-joke {
@@ -40,4 +40,41 @@
 .add-joke {
   right: 12%;
   top: -10%;
+}
+@media (max-width: 400px) {
+  .joke-button {
+    width: 70%;
+  }
+  .all-jokes {
+    right: 3%;
+    bottom: 7%;
+  }
+  .add-joke {
+    right: -15%;
+    top: -8%;
+  }
+  .random-joke {
+    left: -7%;
+    bottom: 52%;
+  }
+}
+@media (min-width: 400px) and (max-width: 800px) {
+  .joke-button {
+    width: 50%;
+    h2 {
+      font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    }
+  }
+  .all-jokes {
+    right: 3%;
+    bottom: 12%;
+  }
+  .add-joke {
+    right: -3%;
+    top: -5%;
+  }
+  .random-joke {
+    left: -3%;
+    bottom: 48%;
+  }
 }
